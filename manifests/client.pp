@@ -177,6 +177,7 @@ class ldap::client(
   $bindpw         = false,
   $ssl            = false,
   $ssl_cert       = false,
+  $search_scope   = false,
 
   $nsswitch   = false,
   $nss_passwd = false,

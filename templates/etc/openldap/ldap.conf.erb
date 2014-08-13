@@ -39,6 +39,10 @@ pam_password         <%= @pam_passwd %>
 pam_filter           <%= @pam_filter %>
 <% end -%>
 
+<% if @search_scope != false then -%>
+scope <%= @search_scope %>
+<% end -%>
+
 <% if @sudoers_base != false -%>
 sudoers_base          <%= @sudoers_base %>,<%= @base %>
 sudoers_search_filter <%= @sudoers_filter %>
