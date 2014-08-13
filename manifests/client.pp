@@ -231,7 +231,7 @@ class ldap::client(
   }
 
   # Configurations based on operating system release
-  include "ldap::os::${::osclass}"
+  include "ldap::os::${::osfamily}"
 
   if($ssl) {
 
